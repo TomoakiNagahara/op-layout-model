@@ -29,5 +29,8 @@ if( $config ){
 	OP()->Config(basename(__DIR__), $config);
 }
 
+//	WebPack
+OP()->Unit()->WebPack('js', 'css');
+
 //	Output HTML
 include('html.phtml');
